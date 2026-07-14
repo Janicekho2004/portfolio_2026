@@ -17,7 +17,7 @@ html {
 body {
     min-height: 100vh;
     margin: 0;
-    background: var(--paper);
+    background: var(--paper) url("../images/general_background.png") center / cover fixed no-repeat;
     color: var(--nav-ink);
     font-family: "Spline Sans", Arial, sans-serif;
 }
@@ -64,6 +64,98 @@ body {
 .portfolio-section.is-visible .cover-art,
 .portfolio-section.is-visible .section-art {
     transform: scale(1);
+}
+
+.contact-card {
+    display: grid;
+    align-items: center;
+    padding: clamp(42px, 6vw, 74px) clamp(34px, 7vw, 92px) clamp(104px, 9vw, 126px);
+    background: var(--paper) url("../images/general_background.png") center / cover no-repeat;
+}
+
+.contact-card::before,
+.contact-card::after {
+    content: "";
+    position: absolute;
+    filter: drop-shadow(0 8px 8px rgba(47, 72, 88, 0.2));
+}
+
+.contact-card::before {
+    top: 9%;
+    right: 10%;
+    width: clamp(92px, 12vw, 160px);
+    aspect-ratio: 1;
+    background: #9bd7d6;
+    clip-path: polygon(50% 0, 61% 34%, 98% 35%, 68% 55%, 79% 91%, 50% 70%, 21% 91%, 32% 55%, 2% 35%, 39% 34%);
+    transform: rotate(15deg);
+}
+
+.contact-card::after {
+    left: 8%;
+    bottom: 17%;
+    width: clamp(160px, 22vw, 280px);
+    height: clamp(42px, 5vw, 62px);
+    background: #f2bfd0;
+    clip-path: polygon(0 12%, 88% 12%, 100% 50%, 88% 88%, 0 88%, 8% 50%);
+    transform: rotate(-5deg);
+}
+
+.contact-content {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    gap: clamp(22px, 3vw, 34px);
+    width: min(100%, 1080px);
+}
+
+.contact-kicker {
+    margin: 0;
+    color: #1f78ad;
+    font-size: clamp(3rem, 7vw, 6.5rem);
+    font-weight: 800;
+    line-height: 0.9;
+}
+
+.content-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(16px, 2.2vw, 26px);
+}
+
+.contact-info {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    min-width: 0;
+    padding: clamp(18px, 2.4vw, 28px);
+    border: 2px solid rgba(47, 72, 88, 0.13);
+    border-radius: 6px;
+    background: rgba(255, 253, 244, 0.76);
+    box-shadow: 0 16px 34px rgba(47, 72, 88, 0.11);
+    backdrop-filter: blur(3px);
+}
+
+.contact-info p {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.contact-info p:first-child {
+    color: #1f78ad;
+    font-size: clamp(0.92rem, 1.4vw, 1.1rem);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.contact-info p:last-child {
+    color: #263640;
+    font-size: clamp(1.35rem, 3vw, 2.45rem);
+    font-weight: 800;
+    line-height: 1.08;
+}
+
+.email-contact p:last-child {
+    font-size: clamp(1.1rem, 2.2vw, 1.8rem);
 }
 
 .page-nav {
@@ -139,6 +231,47 @@ body {
         width: min(360px, calc(100% - 28px));
         gap: 6px;
         padding-inline: 12px;
+    }
+
+    .contact-card {
+        min-height: 100vh;
+        align-items: start;
+        padding: 28px 18px 104px;
+    }
+
+    .contact-card::before {
+        top: 2%;
+        right: 4%;
+        width: 76px;
+    }
+
+    .contact-card::after {
+        left: auto;
+        right: -26px;
+        bottom: 112px;
+        width: 168px;
+        height: 42px;
+    }
+
+    .contact-content {
+        gap: 18px;
+    }
+
+    .contact-kicker {
+        font-size: clamp(2.7rem, 16vw, 4.7rem);
+    }
+
+    .content-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .contact-info {
+        padding: 16px;
+    }
+
+    .contact-info p:last-child {
+        font-size: clamp(1.2rem, 7vw, 1.85rem);
     }
 }
 
