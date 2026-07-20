@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --sage: #DFE9E4;
+    --teal: #2C514C;
+    --wine: #3B0D11;
+    --clay: #6A3937;
+    --taupe: #93827F;
+    --paper: #FFFFFF;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 36px 48px 72px;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    color: #3B0D11;
+    background: #DFE9E4;
+}
+
+.site-header {
+    width: min(100%, 1500px);
+    min-height: 88px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.logo {
+    color: var(--wine);
+    font-family: "Saira", Arial, Helvetica, sans-serif;
+    font-size: 2.35rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.mobile-menu {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.mobile-menu a {
+    padding: 12px 14px;
+    border-radius: 999px;
+    color: var(--teal);
+    font-size: 1.35rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 160ms ease, background 160ms ease;
+}
+
+.mobile-menu a:hover {
+    color: var(--wine);
+    background: rgba(255, 255, 255, 0.72);
+}
+
+.mobile-menu .linkedin-button {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: transparent;
+}
+
+.mobile-menu .linkedin-button img {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+.profile {
+    width: min(100%, 1040px);
+    margin: 84px auto 0;
+    padding: 76px 64px;
+    border: 1px solid rgba(59, 13, 17, 0.12);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.78);
+    box-shadow: 0 24px 60px rgba(44, 81, 76, 0.14);
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-family: "Saira", Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: clamp(3.2rem, 6vw, 5.6rem);
+    line-height: 1.05;
+    color: var(--wine);
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px 42px;
+    justify-content: center;
+    margin: 28px 0 40px;
+}
+
+.contact p {
+    margin: 0;
+    color: var(--taupe);
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+button {
+    min-height: 68px;
+    padding: 0 42px;
+    border: 0;
+    border-radius: 999px;
+    color: #ffffff;
+    background: var(--teal);
+    font: inherit;
+    font-size: 1.35rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
+}
+
+button:hover {
+    background: var(--clay);
+    box-shadow: 0 12px 24px rgba(106, 57, 55, 0.26);
+    transform: translateY(-2px);
+}
+
+button:focus-visible {
+    outline: 3px solid rgba(44, 81, 76, 0.35);
+    outline-offset: 4px;
+}
+
+@media (max-width: 520px) {
+    body {
+        padding: 18px;
+    }
+
+    .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .mobile-menu {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .mobile-menu a {
+        padding: 8px 10px;
+        font-size: 0.88rem;
+    }
+
+    .profile {
+        margin-top: 48px;
+        padding: 32px 22px;
+    }
+
+    .logo {
+        font-size: 1.75rem;
+    }
+
+    h1 {
+        font-size: clamp(2.4rem, 13vw, 3.4rem);
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .contact p {
+        font-size: 0.98rem;
+    }
+
+    button {
+        min-height: 54px;
+        padding: 0 22px;
+        font-size: 1rem;
+    }
+}

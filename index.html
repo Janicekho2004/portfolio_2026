@@ -3,69 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Janice Kho Ting Wei | Portfolio</title>
+    <title>Janice's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <main>
-        <section class="portfolio-section cover-page" aria-label="Portfolio cover page">
-            <div class="art-card">
-                <img class="cover-art" src="images/cover_page/image.png" alt="Portfolio cover artwork for Janice Kho Ting Wei">
+    <header class="site-header">
+        <a class="logo" href="#">Janice</a>
 
-                <nav class="page-nav" aria-label="Portfolio sections">
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </nav>
-            </div>
-        </section>
+        <nav class="mobile-menu" aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#project">Projects</a>
+            <a href="#resume">Resume</a>
 
-        <section class="portfolio-section about-page" id="about" aria-label="About me">
-            <div class="art-card">
-                <img class="section-art" src="images/about_me/image.png" alt="About Janice Kho Ting Wei">
+            <a class="linkedin-button" 
+                href="https://www.linkedin.com/in/janice-kho-ting-wei-541076395" 
+                target="_blank" 
+                aria-label="Visit Janice's LinkedIn profile">
+                <img src="image/linkedin.png">
+            </a>
 
-                <nav class="page-nav" aria-label="Portfolio sections">
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </nav>
-            </div>
-        </section>
+        </nav>
+    </header>
 
-        <section class="portfolio-section contact-page" id="contact" aria-label="Contact Janice Kho Ting Wei">
-            <div class="art-card contact-card">
-                <div class="contact-content">
-                    <p class="contact-kicker">Contact</p>
-                    
-                    <div class="content-row">
-                        <div class="contact-info email-contact">
-                            <p>Email</p>
-                            <p>janicekho80@gmail.com</p>
-                        </div>
+    <main class="profile">
+        <h1>Janice Kho Ting Wei</h1>
 
-                        <div class="contact-info">
-                            <p>Phone Number</p>
-                            <p>019-400-8613</p>
-                        </div>
-                        
-                        <div class="contact-info">
-                            <p>GitHub Profile</p>
-                            <p>(Link)</p>
-                        </div>
-                        
-                        <div class="contact-info">
-                            <p>LinkedIn</p>
-                            <p>(Link)</p>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
+        <div class="contact">
+            <p>019-400-8613</p>
+            <p>janicekho80@gmail.com</p>
+            <p>https://github.com/Janicekho2004</p>
+        </div>
+
+        <button type="button">Get To Know Me and My Projects</button>
     </main>
-    <script src="js/main.js"></script>
 </body>
 </html>
