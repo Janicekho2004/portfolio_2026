@@ -2,15 +2,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --sage: #DFE9E4;
-    --teal: #2C514C;
-    --wine: #3B0D11;
-    --clay: #6A3937;
-    --taupe: #93827F;
-    --paper: #FFFFFF;
-}
-
 body {
     min-height: 100%;
     margin: 0;
@@ -31,9 +22,9 @@ body {
 }
 
 .logo {
-    color: var(--wine);
+    color: #3B0D11;
     font-family: "Saira", Arial, Helvetica, sans-serif;
-    font-size: 2.35rem;
+    font-size: 30px;
     font-weight: 800;
     text-decoration: none;
 }
@@ -47,7 +38,7 @@ body {
 .mobile-menu a {
     padding: 12px 14px;
     border-radius: 999px;
-    color: var(--teal);
+    color: #2C514C;
     font-size: 1.35rem;
     font-weight: 700;
     text-decoration: none;
@@ -55,7 +46,7 @@ body {
 }
 
 .mobile-menu a:hover {
-    color: var(--wine);
+    color: #3B0D11;
     background: rgba(255, 255, 255, 0.72);
 }
 
@@ -80,7 +71,7 @@ body {
     margin: 84px auto 0;
     padding: 76px 64px;
     border: 1px solid rgba(59, 13, 17, 0.12);
-    border-radius: 8px;
+    border-radius: 20px;
     background: rgba(255, 255, 255, 0.78);
     box-shadow: 0 24px 60px rgba(44, 81, 76, 0.14);
     text-align: center;
@@ -92,7 +83,7 @@ h1 {
     font-weight: 800;
     font-size: clamp(3.2rem, 6vw, 5.6rem);
     line-height: 1.05;
-    color: var(--wine);
+    color: #3B0D11;
 }
 
 .contact {
@@ -106,7 +97,7 @@ h1 {
 
 .contact p {
     margin: 0;
-    color: var(--taupe);
+    color: #93827F;
     text-align: center;
     font-size: 1.25rem;
 }
@@ -117,7 +108,7 @@ button {
     border: 0;
     border-radius: 999px;
     color: #ffffff;
-    background: var(--teal);
+    background: #2C514C;
     font: inherit;
     font-size: 1.35rem;
     font-weight: 700;
@@ -126,7 +117,7 @@ button {
 }
 
 button:hover {
-    background: var(--clay);
+    background: #6A3937;
     box-shadow: 0 12px 24px rgba(106, 57, 55, 0.26);
     transform: translateY(-2px);
 }
@@ -134,6 +125,83 @@ button:hover {
 button:focus-visible {
     outline: 3px solid rgba(44, 81, 76, 0.35);
     outline-offset: 4px;
+}
+
+.section-panel {
+    width: min(100%, 1500px);
+    margin-top: 50px;
+    margin: 72px auto 0;
+    padding: 64px;
+    border-radius: 20px;
+}
+
+.section-heading {
+    max-width: 720px;
+    margin-bottom: 36px;
+}
+
+.section-heading p {
+    margin: 0 0 10px;
+    color: #6A3937;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.section-heading h2 {
+    margin: 0;
+    color: #3B0D11;
+    font-family: "Saira", Arial, Helvetica, sans-serif;
+    font-size: clamp(2rem, 4vw, 3.4rem);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: 44px;
+    align-items: start;
+}
+
+.about-text {
+    display: grid;
+    gap: 18px;
+}
+
+.about-text p {
+    margin: 0;
+    color: #2C514C;
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+.about-text strong {
+    color: #3B0D11;
+}
+
+.about-highlights {
+    display: grid;
+    gap: 14px;
+}
+
+.about-highlights article {
+    padding: 22px;
+    border: 2px solid #2C514C;
+    border-left: 6px solid #2C514C;
+    border-radius: 8px;
+    background: #DFE9E4;
+}
+
+.about-highlights h3 {
+    margin: 0 0 8px;
+    color: #3B0D11;
+    font-family: "Saira", Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+}
+
+.about-highlights p {
+    margin: 0;
+    color: #6A3937;
+    font-size: 17px;
+    line-height: 1.55;
 }
 
 @media (max-width: 520px) {
@@ -184,5 +252,24 @@ button:focus-visible {
         min-height: 54px;
         padding: 0 22px;
         font-size: 1rem;
+    }
+
+    .section-panel {
+        margin-top: 28px;
+        padding: 25px 18px;
+    }
+
+    .section-heading {
+        margin-bottom: 28px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+        line-height: 1.7;
     }
 }
