@@ -245,6 +245,81 @@ button:focus-visible {
     }
 }
 
+
+/* experience page */
+.experience-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.experience-card {
+    padding: 28px;
+    border: 2px solid rgba(44, 81, 76, 0.28);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.58);
+}
+
+.experience-card-header {
+    margin-bottom: 24px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid rgba(44, 81, 76, 0.16);
+}
+
+.experience-card h3 {
+    margin: 0;
+    color: #3B0D11;
+    font-family: "Saira", Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+}
+
+.experience-card-header p {
+    margin: 6px 0 0;
+    color: #6A3937;
+    font-weight: 700;
+}
+
+.experience-project {
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(44, 81, 76, 0.16);
+}
+
+.experience-project:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.experience-project h4 {
+    margin: 0 0 10px;
+    color: #3B0D11;
+    font-family: "Saira", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.experience-project p {
+    margin: 0;
+    color: #2C514C;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.tag-list span {
+    padding: 7px 10px;
+    border: 1px solid rgba(44, 81, 76, 0.24);
+    border-radius: 999px;
+    color: #2C514C;
+    background: #DFE9E4;
+    font-size: 0.85rem;
+    font-weight: 800;
+}
+
 @media (max-width: 520px) {
     body {
         padding: 18px;
@@ -328,5 +403,17 @@ button:focus-visible {
     .about-text p {
         font-size: 1rem;
         line-height: 1.7;
+    }
+
+    .experience-content {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-card {
+        padding: 22px;
+    }
+
+    .experience-card h3 {
+        font-size: 1.45rem;
     }
 }
