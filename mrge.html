@@ -73,7 +73,98 @@
                     </div>
                 </div>
             </section>
+
+            <section class="video-demo">
+                <div>
+                    <h2>Demo Video</h2>
+                    <p>
+                        This video was submitted as part of my assignment and
+                        demonstrates the Mixed Reality Game Engine concept and flow.
+                    </p>
+                </div>
+
+                <div class="video-frame">
+                    <iframe
+                        src="https://www.youtube.com/embed/8WFU8Zbb2IU"
+                        title="Mixed Reality Game Engine demo video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+
+            <section class="carousel-section" id="screens">
+                <div class="container">
+                    <div class="carousel-header">
+                        <div class="section-label reveal">Project Screens</div>
+                        <h2 class="section-title reveal reveal-delay-1">Mixed Reality<br><em>interface preview</em></h2>
+                        <p class="section-sub reveal reveal-delay-2">Selected screens from the Mixed Reality Game Engine project.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-zoom">
+                    <button class="zoom-btn" id="zoomOut" aria-label="Zoom out">-</button>
+                    <div class="zoom-pips" id="zoomPips"></div>
+                    <button class="zoom-btn" id="zoomIn" aria-label="Zoom in">+</button>
+                </div>
+
+                <div class="carousel-stage" id="carouselStage">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="phone-card" data-pos="left2" data-index="0">
+                            <div class="phone-shell">
+                                <div class="phone-screen">
+                                    <img src="image/mrge/Pic1.jpeg" alt="App screen 1" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="phone-card" data-pos="left1" data-index="1">
+                            <div class="phone-shell">
+                                <div class="phone-screen">
+                                    <img src="image/mrge/Pic2.jpeg" alt="App screen 2" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="phone-card" data-pos="center" data-index="2">
+                            <div class="phone-shell">
+                                <div class="phone-screen">
+                                    <img src="image/mrge/Pic3.jpeg" alt="App screen 3" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="phone-card" data-pos="right1" data-index="3">
+                            <div class="phone-shell">
+                                <div class="phone-screen">
+                                    <img src="image/mrge/Pic4.jpeg" alt="App screen 4" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="phone-card" data-pos="right2" data-index="4">
+                            <div class="phone-shell">
+                                <div class="phone-screen">
+                                    <img src="image/mrge/Pic5.jpeg" alt="App screen 5" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="carouselPrev" aria-label="Previous screen">
+                        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+                    </button>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                    <button class="carousel-btn" id="carouselNext" aria-label="Next screen">
+                        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                    </button>
+                </div>
+            </section>
         </div>
     </main>
+
+    <script src="mrge.js"></script>
 </body>
 </html>
