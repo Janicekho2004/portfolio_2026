@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background: #080a17;
+}
+
+.intro-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(image/space.png);
+}
+
+.back-arrow-link {
+    position: absolute;
+    top: 32px;
+    left: 48px;
+    width: 46px;
+    height: 46px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(159, 216, 255, 0.35);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    transition: transform 160ms ease, background 160ms ease;
+    z-index: 2;
+}
+
+.back-arrow-link:hover {
+    background: rgba(255, 255, 255, 0.22);
+    transform: translateX(-3px);
+}
+
+.back-arrow-img {
+    width: 22px;
+    height: 22px;
+    display: block;
+    object-fit: contain;
+}
+
+.intro-layout {
+    width: min(100%, 1280px);
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(320px, 0.8fr);
+    gap: 48px;
+    align-items: center;
+}
+
+.intro-content {
+    width: min(100%, 760px);
+}
+
+.project-label {
+    margin: 0 0 12px;
+    color: #9fd8ff;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 0 0 24px;
+    font-family: "Saira", Arial, Helvetica, sans-serif;
+    font-size: clamp(3.2rem, 9vw, 7rem);
+    line-height: 0.95;
+}
+
+.intro-content p {
+    margin: 0 0 16px;
+    max-width: 680px;
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.intro-preview {
+    margin: 0;
+    padding: 12px;
+    border: 1px solid rgba(159, 216, 255, 0.28);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
+}
+
+.intro-preview img,
+.intro-preview video {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+
+@media (max-width: 620px) {
+    .intro-page {
+        padding: 88px 24px 40px;
+    }
+
+    .back-arrow-link {
+        top: 24px;
+        left: 24px;
+    }
+
+    .intro-content p {
+        font-size: 1rem;
+    }
+
+    .intro-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+}
