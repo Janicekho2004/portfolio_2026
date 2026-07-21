@@ -782,6 +782,128 @@ button:focus-visible {
     letter-spacing: 0.06em; text-transform: uppercase; width: 36px; text-align: center;
 }
 
+/* CBT case study page */
+.cbt-page {
+    width: min(100%, 1280px);
+    margin: 72px auto 0;
+}
+
+.cbt-hero {
+    min-height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 72px;
+    border: 2px solid rgba(106, 57, 55, 0.22);
+    border-radius: 24px;
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.78), rgba(223, 233, 228, 0.76)),
+        radial-gradient(circle at top right, rgba(147, 130, 127, 0.28), transparent 30rem);
+}
+
+.cbt-label {
+    margin: 0 0 12px;
+    color: #6A3937;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.cbt-hero h1 {
+    max-width: 900px;
+    margin: 0;
+    font-size: clamp(3.4rem, 8vw, 7rem);
+}
+
+.cbt-hero > p:last-child {
+    max-width: 760px;
+    margin: 24px 0 0;
+    color: #2C514C;
+    font-size: 1.25rem;
+    line-height: 1.75;
+}
+
+.cbt-roles {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 28px;
+}
+
+.cbt-roles article,
+.cbt-process,
+.cbt-tools {
+    border: 2px solid rgba(44, 81, 76, 0.22);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.62);
+}
+
+.cbt-roles article {
+    padding: 28px;
+}
+
+.cbt-roles span {
+    color: rgba(59, 13, 17, 0.22);
+    font-family: "Saira", Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.cbt-roles h2,
+.cbt-process h2,
+.cbt-tools h2 {
+    margin: 8px 0 12px;
+    color: #3B0D11;
+    font-family: "Saira", Arial, Helvetica, sans-serif;
+}
+
+.cbt-roles p,
+.process-steps p {
+    margin: 0;
+    color: #2C514C;
+    line-height: 1.65;
+}
+
+.cbt-process {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    gap: 32px;
+    margin-top: 28px;
+    padding: 40px;
+}
+
+.cbt-process h2 {
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    line-height: 1.1;
+}
+
+.process-steps {
+    display: grid;
+    gap: 14px;
+}
+
+.process-steps article {
+    padding: 18px 20px;
+    border-left: 5px solid #2C514C;
+    border-radius: 10px;
+    background: #DFE9E4;
+}
+
+.process-steps span {
+    display: block;
+    margin-bottom: 6px;
+    color: #3B0D11;
+    font-weight: 900;
+}
+
+.cbt-tools {
+    margin-top: 28px;
+    padding: 32px;
+}
+
+.cbt-tools h2 {
+    margin-top: 0;
+}
+
 @media (max-width: 520px) {
     body {
         padding: 18px;
@@ -909,5 +1031,25 @@ button:focus-visible {
 
     .video-demo {
         grid-template-columns: 1fr;
+    }
+
+    .cbt-page {
+        margin-top: 28px;
+    }
+
+    .cbt-hero {
+        min-height: auto;
+        padding: 42px 24px;
+    }
+
+    .cbt-roles,
+    .cbt-process {
+        grid-template-columns: 1fr;
+    }
+
+    .cbt-process,
+    .cbt-tools,
+    .cbt-roles article {
+        padding: 22px;
     }
 }
