@@ -10,6 +10,41 @@
     background: #DFE9E4;
 }
 
+.back-arrow-link {
+    position: absolute;
+    top: 28px;
+    left: 28px;
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(80, 125, 188, 0.28);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.72);
+    box-shadow: 0 10px 24px rgba(80, 125, 188, 0.14);
+    transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
+    z-index: 20;
+}
+
+.back-arrow-link:hover {
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 14px 30px rgba(80, 125, 188, 0.2);
+    transform: translateX(-3px);
+}
+
+.back-arrow-link:focus-visible {
+    outline: 3px solid rgba(80, 125, 188, 0.32);
+    outline-offset: 4px;
+}
+
+.back-arrow-img {
+    width: 21px;
+    height: 21px;
+    display: block;
+    object-fit: contain;
+}
+
 .user-ptt {
     width: min(100%, 1180px);
     min-height: 70vh;
