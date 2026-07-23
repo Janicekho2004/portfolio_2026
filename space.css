@@ -10,11 +10,12 @@ body {
 }
 
 .intro-page {
+    position: relative;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 48px;
+    padding: 96px 48px 48px;
     background-position: center;
     background-size: cover;
     background-image: url(image/space.png);
@@ -22,7 +23,7 @@ body {
 
 .back-arrow-link {
     position: absolute;
-    top: 32px;
+    top: 28px;
     left: 48px;
     width: 46px;
     height: 46px;
@@ -100,7 +101,7 @@ h1 {
 
 @media (max-width: 620px) {
     .intro-page {
-        padding: 88px 24px 40px;
+        padding: 96px 24px 40px;
     }
 
     .back-arrow-link {

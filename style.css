@@ -428,8 +428,54 @@ button:focus-visible {
 }
 
 .project-detail-compact {
+    position: relative;
     margin-top: 0;
-    padding-top: 44px;
+    padding-top: 64px;
+}
+
+.project-detail-compact .back-arrow-link {
+    position: absolute;
+    top: 16px;
+    left: 28px;
+    width: 46px;
+    height: 46px;
+    margin-bottom: 0;
+    border: 1px solid rgba(44, 81, 76, 0.28);
+    background: rgba(255, 255, 255, 0.72);
+    box-shadow: 0 10px 24px rgba(44, 81, 76, 0.14);
+    z-index: 20;
+}
+
+.project-detail-compact .back-arrow-link:hover {
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 14px 30px rgba(44, 81, 76, 0.2);
+}
+
+.project-detail-compact .back-arrow-img {
+    width: 21px;
+    height: 21px;
+}
+
+.project-detail-compact .section-heading {
+    margin-bottom: 24px;
+}
+
+.project-detail-compact h1 {
+    font-size: clamp(3rem, 5.4vw, 5rem);
+    line-height: 0.98;
+}
+
+.project-detail-compact .section-intro {
+    margin-bottom: 24px;
+}
+
+.project-detail-compact .project-detail-grid {
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.project-detail-compact .project-detail-grid > section {
+    padding: 22px 28px;
 }
 
 .project-detail-grid {
