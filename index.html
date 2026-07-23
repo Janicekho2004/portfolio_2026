@@ -20,7 +20,6 @@
             <a href="#about">About</a>
             <a href="#experience">Experience</a>
             <a href="#project">Projects</a>
-            <a href="#resume">Resume</a>
 
             <a class="linkedin-button"
                 href="https://www.linkedin.com/in/janice-kho-ting-wei-541076395"
@@ -42,7 +41,6 @@
             <p>https://github.com/Janicekho2004</p>
         </div>
 
-        <button type="button">Explore My Portfolio</button>
     </main>
 
     <!-- skills marquee -->
@@ -252,7 +250,7 @@
 
         <!-- MRGE -->
         <div class="project-list">
-            <a class="project-row" href="mrge.html" aria-label="View Mixed Reality Game Engine project">
+            <a class="project-row project-row-mrge" href="mrge.html" aria-label="View Mixed Reality Game Engine project">
                 <span class="project-number">01</span>
 
                 <div class="project-row-main">
@@ -281,7 +279,7 @@
             </a>
 
             <!-- Space Shooting Game -->
-            <a class="project-row" href="space.html" aria-label="View Space Shooting Game project">
+            <a class="project-row project-row-space" href="space.html" aria-label="View Space Shooting Game project">
                 <span class="project-number">02</span>
 
                 <div class="project-row-main">
@@ -307,7 +305,7 @@
             </a>
 
             <!-- CBT -->
-            <a class="project-row" href="cbt.html" aria-label="View CBT Mental Health App project">
+            <a class="project-row project-row-cbt" href="cbt.html" aria-label="View CBT Mental Health App project">
                 <span class="project-number">03</span>
 
                 <div class="project-row-main">
@@ -332,5 +330,22 @@
             </a>
         </div>
     </section>
+
+    <script>
+        const siteHeader = document.querySelector(".site-header");
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener("scroll", () => {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY > lastScrollY && currentScrollY > 120) {
+                siteHeader.classList.add("header-hidden");
+            } else {
+                siteHeader.classList.remove("header-hidden");
+            }
+
+            lastScrollY = currentScrollY;
+        });
+    </script>
 </body>
 </html>
