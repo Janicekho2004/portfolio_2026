@@ -3,97 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CBT Mental Health App | Janice's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&family=Saira:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <title>CBT App Case Study</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-[#F5F5F5] text-gray-800 font-sans antialiased m-0">
 
-<body>
-    <main class="cbt-page">
-        <a class="back-arrow-link" href="index.html#project" aria-label="Back to projects">
-            <img class="back-arrow-img" src="image/back-arrow.png" alt="">
-        </a>
-
-        <section class="cbt-hero">
-            <p class="cbt-label">UI/UX Design Project</p>
-            <h1>CBT Mental Health App</h1>
-            <p>
-                A mental health mobile app concept designed around Cognitive
-                Behavioural Therapy principles, with role-specific flows for
-                patients, general users, and CBT users.
+    <header class="min-h-screen w-full px-6 md:px-12 lg:px-16 py-12 md:py-20 grid md:grid-cols-2 gap-12 items-center overflow-hidden" style="background: linear-gradient(100deg, rgba(136, 147, 206, 0.34) 18%, rgba(188, 187, 200, 0.34) 47%, rgba(255, 238, 192, 0.46) 79%, rgba(255, 255, 244, 0.72) 100%);">
+        <div>
+            <a href="index.html#project" class="inline-flex mb-8 text-sm font-semibold text-emerald-700 hover:text-emerald-900">
+                Back to Projects
+            </a>
+            <span class="text-sm font-semibold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">UI/UX & Frontend Case Study</span>
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mt-4 mb-6">
+                CBT Mental Health Mobile Application
+            </h1>
+            <p class="text-lg text-gray-600 leading-relaxed mb-8">
+                A high-fidelity mobile prototype designed to bridge the gap between patients undergoing Cognitive Behavioral Therapy and clinical therapists. Built with a scalable design system for clearer handoff.
             </p>
-        </section>
+            <div class="flex flex-wrap gap-4">
+                <span class="px-3 py-1.5 bg-white shadow-sm border rounded-md text-sm font-medium text-gray-700">Figma</span>
+                <span class="px-3 py-1.5 bg-white shadow-sm border rounded-md text-sm font-medium text-gray-700">Auto Layout</span>
+                <span class="px-3 py-1.5 bg-white shadow-sm border rounded-md text-sm font-medium text-gray-700">Design System</span>
+            </div>
+        </div>
 
-        <section class="cbt-roles" aria-label="App user roles">
-            <article>
-                <span>01</span>
-                <h2>Patients</h2>
-                <p>Access guided support, mental health resources, and progress-focused features.</p>
-            </article>
+        <div class="flex justify-center items-center gap-0 md:gap-3 relative min-h-[560px]">
+            <div class="w-48 h-96 md:w-60 md:h-[30rem] rounded-[2.8rem] shadow-xl border-4 border-gray-900 overflow-hidden transform -rotate-6 hover:rotate-0 hover:-translate-y-2 transition-transform duration-300 -mr-12 md:-mr-16 mt-12 z-10" style="background: linear-gradient(100deg, #8893CE 18%, #BCBBC8 47%, #FFEEC0 79%, #FFFFF4 100%);">
+                <img src="image/cbt/user1.png" alt="User App Interface" class="w-full h-full object-cover">
+            </div>
 
-            <article>
-                <span>02</span>
-                <h2>General Users</h2>
-                <p>Explore wellness tools, self-help content, and simple mental health guidance.</p>
-            </article>
+            <div class="w-52 h-[26rem] md:w-64 md:h-[32rem] bg-gradient-to-b from-blue-100 to-pink-100 rounded-[2.8rem] shadow-2xl border-4 border-gray-900 overflow-hidden transform hover:-translate-y-3 transition-transform duration-300 z-20">
+                <img src="image/cbt/patient1.png" alt="Patient App Interface" class="w-full h-full object-cover">
+            </div>
 
-            <article>
-                <span>03</span>
-                <h2>CBT Users</h2>
-                <p>Use CBT-based activities, reflection tools, and structured exercise flows.</p>
-            </article>
-        </section>
+            <div class="w-48 h-96 md:w-60 md:h-[30rem] bg-gradient-to-b from-emerald-100 to-emerald-50 rounded-[2.8rem] shadow-xl border-4 border-gray-900 overflow-hidden transform rotate-6 hover:rotate-0 hover:-translate-y-2 transition-transform duration-300 -ml-12 md:-ml-16 mt-20 z-10">
+                <img src="image/cbt/therapist1.png" alt="Therapist App Interface" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </header>
 
-        <section class="cbt-process">
+    <hr class="border-gray-200 max-w-7xl mx-auto">
+
+    <section class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12">
+        <div>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">The Challenge</h2>
+            <p class="text-gray-600 leading-relaxed">
+                Mental health tracking apps can feel clinical or disconnected from therapy providers. Patients may lose motivation, while therapists may not have enough structured information to understand user progress.
+            </p>
+        </div>
+        <div>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">The Solution</h2>
+            <p class="text-gray-600 leading-relaxed">
+                Created a multi-role app concept with calming patient flows, CBT-based activities, and structured therapist-facing screens for identity, education, and carrier verification.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-16 border-y border-gray-200" style="background: linear-gradient(100deg, rgba(80, 125, 188, 0.34) 15%, rgba(139, 175, 216, 0.38) 45%, rgba(197, 184, 225, 0.42) 55%, rgba(242, 166, 166, 0.34) 70%, rgba(234, 244, 251, 0.95) 90%);">
+        <div class="max-w-7xl mx-auto px-6 mb-6">
+            <h2 class="text-2xl font-bold text-gray-900">User Flow 01: Patient Onboarding & Tracking</h2>
+            <p class="text-gray-600 mt-2">Soft gradients designed to reduce anxiety during emotional documentation.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 px-6 pb-5 max-w-7xl mx-auto">
             <div>
-                <p class="cbt-label">Process</p>
-                <h2>From requirements to tested prototype.</h2>
+                <div class="bg-white/70 rounded-2xl p-2 shadow-sm border border-white/70 mb-3">
+                    <img src="image/cbt/cbtDashboard.png" alt="CBT dashboard screen" class="w-full h-auto rounded-xl bg-slate-200">
+                </div>
+                <h3 class="font-semibold text-sm text-gray-900">1. CBT Dashboard</h3>
+                <p class="text-xs text-gray-500 mt-1">Main hub for CBT tools and daily support.</p>
             </div>
 
-            <div class="process-steps">
-                <article>
-                    <span>Research</span>
-                    <p>Analysed requirements and identified the needs of different user groups.</p>
-                </article>
-
-                <article>
-                    <span>User Flow</span>
-                    <p>Mapped app navigation and separate task flows for each user role.</p>
-                </article>
-
-                <article>
-                    <span>Wireframes</span>
-                    <p>Created low-fidelity screens to plan layout, structure, and content order.</p>
-                </article>
-
-                <article>
-                    <span>Prototype</span>
-                    <p>Designed high-fidelity Figma screens and connected them into an app prototype.</p>
-                </article>
-
-                <article>
-                    <span>Testing</span>
-                    <p>Collected user feedback and refined the interface for better clarity.</p>
-                </article>
+            <div>
+                <div class="bg-white/70 rounded-2xl p-2 shadow-sm border border-white/70 mb-3">
+                    <img src="image/cbt/cbtEmotionEntries.png" alt="Emotion entries screen" class="w-full h-auto rounded-xl bg-slate-200">
+                </div>
+                <h3 class="font-semibold text-sm text-gray-900">2. Emotion Entries</h3>
+                <p class="text-xs text-gray-500 mt-1">Records emotional check-ins and reflections.</p>
             </div>
-        </section>
 
-        <section class="cbt-tools">
-            <h2>Tools & Skills</h2>
-            <div class="tag-list">
-                <span>Figma</span>
-                <span>UI/UX Design</span>
-                <span>User Flow</span>
-                <span>Wireframing</span>
-                <span>Prototyping</span>
-                <span>User Testing</span>
-                <span>Requirement Analysis</span>
-                <span>Project Management</span>
+            <div>
+                <div class="bg-white/70 rounded-2xl p-2 shadow-sm border border-white/70 mb-3">
+                    <img src="image/cbt/cbtLoggingBehaviour.png" alt="Behaviour logging screen" class="w-full h-auto rounded-xl bg-slate-200">
+                </div>
+                <h3 class="font-semibold text-sm text-gray-900">3. Behaviour Logging</h3>
+                <p class="text-xs text-gray-500 mt-1">Helps users document patterns and triggers.</p>
             </div>
-        </section>
-    </main>
+
+            <div>
+                <div class="bg-white/70 rounded-2xl p-2 shadow-sm border border-white/70 mb-3">
+                    <img src="image/cbt/cbtStatistics.png" alt="CBT statistics screen" class="w-full h-auto rounded-xl bg-slate-200">
+                </div>
+                <h3 class="font-semibold text-sm text-gray-900">4. Progress Statistics</h3>
+                <p class="text-xs text-gray-500 mt-1">Shows progress and emotional trends over time.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="grid grid-cols-2 gap-4 p-6 rounded-3xl border border-emerald-100" style="background: linear-gradient(100deg, rgba(41, 77, 74, 0.18) 20%, rgba(193, 211, 127, 0.42) 71%);">
+                <div class="bg-[#294D4A]/20 p-2 rounded-2xl shadow-md border border-[#294D4A]/20">
+                    <img src="image/cbt/Therapist's Indentity Info.png" alt="Therapist Identity Info" class="w-full rounded-xl aspect-[9/19] object-cover bg-slate-200">
+                </div>
+                <div class="bg-[#294D4A]/20 p-2 rounded-2xl shadow-md border border-[#294D4A]/20 mt-6">
+                    <img src="image/cbt/Carrier Verification.png" alt="Carrier Verification" class="w-full rounded-xl aspect-[9/19] object-cover bg-slate-200">
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">User Flow 02: Verification Ecosystem</h2>
+                <span class="text-xs font-semibold tracking-wider text-emerald-700 bg-emerald-100 px-2.5 py-0.5 rounded">Therapist Portal</span>
+
+                <p class="text-gray-600 mt-6 leading-relaxed">
+                    To support medical authority, the therapist interface uses a cleaner green theme and structured information architecture for heavier input flows.
+                </p>
+                <ul class="mt-6 space-y-4 text-sm text-gray-600">
+                    <li class="flex items-start gap-3">
+                        <span class="text-emerald-500 font-bold">✓</span>
+                        <div><strong>Therapist Identity Architecture:</strong> Standardised data forms keep cognitive load low for detailed input fields.</div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-emerald-500 font-bold">✓</span>
+                        <div><strong>Education & Carrier Verification:</strong> Document upload steps include clear success and error states.</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
